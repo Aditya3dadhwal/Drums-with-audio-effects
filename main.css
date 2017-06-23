@@ -1,0 +1,56 @@
+
+
+
+	/*header {
+  background-color: #4267b2;
+  height: 50px;
+}*/
+#menu, #sidebar, #main{
+	height:600px;
+	background: #e9ebee;
+}
+
+
+.list-heading {
+    padding: 20px 15px 0 15px;
+}
+.panel-body .glyphicon {
+    margin-left: 10px;
+    margin-right: 4px;
+}
+.text-post {
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+.image-post {
+    margin-bottom: 15px;
+}
+#main {
+    overflow: auto;
+
+}
+
+
+#header {
+    background-color: #4267b2;
+    color: white;.comment {
+    margin: 0;
+}
+}
+#white-text {
+  color: white !important;
+}
+.white-text {
+  color: white !important;
+}
+
+#header ul .glyphicon {0
+    font-size: 20px;
+}
+#main::-webkit-scrollbar {
+    display: none;
+}
+
+.comment {
+    margin: 0;
+}style="width: 100%;margin-top: 15px;"
