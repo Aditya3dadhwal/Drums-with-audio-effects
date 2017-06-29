@@ -1,5 +1,6 @@
 
 
+body { padding-top: 70px; }
 
 	/*header {
   background-color: #4267b2;
@@ -53,4 +54,12 @@
 
 .comment {
     margin: 0;
-}style="width: 100%;margin-top: 15px;"
+}
+.nav-pills .black_text{
+  color:black !important;
+}
+
+.custom-dimension{
+  height: 32px;
+  width:35px;
+}
