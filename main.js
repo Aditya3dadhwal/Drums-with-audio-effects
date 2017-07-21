@@ -8,8 +8,9 @@ var drumsOn = 0;
 function clap() {
   var clap = document.querySelector("audio");
 console.log(clap);
-  clap.src="sounds/clap.wav";
+  clap.src="Sounds/clap.wav";
 console.log(clap.src);
+ 
   clap.currentTime = 0;
   clap.play();
   const key = document.querySelector(".key[data-key='65']");
@@ -19,7 +20,7 @@ console.log(clap.src);
 function hihat() {
 
   var hihat = document.querySelector("audio");
-  hihat.src="sounds/hihat.wav";
+  hihat.src="Sounds/hihat.wav";
   hihat.currentTime = 0;
   hihat.play();
   const key = document.querySelector(".key[data-key='83']");
@@ -27,7 +28,7 @@ function hihat() {
 }
 function kick() {
   const kick = document.querySelector("audio");
-  kick.src="sounds/kick.wav"
+  kick.src="Sounds/kick.wav"
   kick.currentTime = 0;
   kick.play();
   const key = document.querySelector(".key[data-key='68']");
@@ -35,7 +36,7 @@ function kick() {
 }
 function openhat() {
   const openhat = document.querySelector("audio");
-  openhat.src="sounds/openhat.wav"
+  openhat.src="Sounds/openhat.wav"
   openhat.currentTime = 0;
   openhat.play();
   const key = document.querySelector(".key[data-key='70']");
@@ -43,7 +44,7 @@ function openhat() {
 }
 function boom() {
   const boom = document.querySelector("audio");
-  boom.src="sounds/boom.wav"
+  boom.src="Sounds/boom.wav"
   boom.currentTime = 0;
   boom.play();
   const key = document.querySelector(".key[data-key='71']");
@@ -51,7 +52,7 @@ function boom() {
 }
 function ride() {
   const ride = document.querySelector("audio");
-  ride.src="sounds/ride.wav";
+  ride.src="Sounds/ride.wav";
   ride.currentTime = 0;
   ride.play();
   const key = document.querySelector(".key[data-key='72']");
@@ -59,7 +60,7 @@ function ride() {
 }
 function snare() {
   const snare = document.querySelector("audio");
-  snare.src="sounds/snare.wav"	;
+  snare.src="Sounds/snare.wav"	;
   snare.currentTime = 0;
   snare.play();
   const key = document.querySelector(".key[data-key='74']");
@@ -67,7 +68,7 @@ function snare() {
 }
 function tom() {
   const tom = document.querySelector("audio");
-  tom.src="sounds/tom.wav"
+  tom.src="Sounds/tom.wav"
   tom.currentTime = 0;
   tom.play();
   const key = document.querySelector(".key[data-key='75']");
@@ -75,7 +76,7 @@ function tom() {
 }
 function tink() {
   const tink = document.querySelector("audio");
-  tink.src="sounds/tink.wav"
+  tink.src="Sounds/tink.wav"
   tink.currentTime = 0;
   tink.play();
   const key = document.querySelector(".key[data-key='76']");
