@@ -1,352 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="utf-8">
-	<meta content="IE=edge" http-equiv="X-UA-Compatible">
-	<meta content="width=device-width, initial-scale=1" name="viewport"><!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	<title>Friendly</title><!-- Bootstrap -->
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
-	<link href="main.css" rel="stylesheet"><!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <meta charset="UTF-8">
+    <title> Song App</title>
+    <link rel="stylesheet" type="text/css" href="font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+
 </head>
+
 <body>
-	<div class="container">
-		<header>
-			<nav class="navbar navbar-default navbar-fixed-top " id="header">
-				<div class="container-fluid">
-					<!-- Brand and toggle get grouped for better mobile display -->
-					<div class="navbar-header">
-						<button aria-expanded="false" class="navbar-toggle collapsed" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button> <a class="navbar-brand" href="#" id="white-text">Friendly</a>
-					</div><!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-						<form class="navbar-form navbar-left">
-							<div class="form-group">
-								<input class="form-control" placeholder="Search" type="text">
-							</div><button class="btn btn-default" type="submit"><span aria-hidden="true" class="glyphicon glyphicon-search"></span></button>
-						</form>
-						<ul class="nav navbar-nav navbar-right">
-						<li><a class="white-text" href="#"><img src="https://scontent.fixc1-1.fna.fbcdn.net/v/t1.0-9/12369269_937010506392621_3685291289780464656_n.jpg?oh=20966e6bf4fe544ad339c240cbe1ec2d&oe=5A0ABF63" 
-						style="width:30px; height: 30px;"></a> 
-						
-						 </li>
-							<li>
-						
-								<a class="white-text" href="#">Aditya</a>
-							</li>
-							<li>
-								<a class="white-text" href="#">Home</a>
-							</li>
-							<li>
-								<a class="white-text" href="#"><span aria-hidden="true" class="glyphicon glyphicon-user"></span></a>
-							</li>
-							<li>
-								<a class="white-text" href="#"><span aria-hidden="true" class="glyphicon glyphicon-envelope"></span></a>
-							</li>
-							<li>
-								<a class="white-text" href="#"><span aria-hidden="true" class="glyphicon glyphicon-globe"></span></a>
-							</li>
-							<li>
-								<a class="white-text" href="#"><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></a>
-							</li>
-							<li style="list-style: none; display: inline">
-								<ul class="nav navbar-nav navbar-right">
-									<li class="dropdown">
-										<a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"><span class="caret white-text"></span></a>
-										<ul class="dropdown-menu">
-											<li>
-												<a href="#">Activity log</a>
-											</li>
-											<li>
-												<a href="#">Create Page</a>
-											</li>
-											<li>
-												<a href="#">Settings</a>
-											</li>
-											<li class="divider" role="separator"></li>
-											<li>
-												<a href="#">Logout</a>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div><!-- /.navbar-collapse -->
-				</div><!-- /.container-fluid -->
-			</nav>
-		</header>
-		<div class="row">
-			<div class="hidden-xs col-sm-4 col-md-3">
-				<div id="menu">
-					<ul class="nav nav-pills nav-stacked">
-						<li role="presentation">
-							<a href="#" class="black_text"><i class="fa fa-address-book" aria-hidden="true"></i> Aditya</a>
-						</li>
-						<li role="presentation">
-							<a href="#" class="black_text"> <i class="fa fa-newspaper-o" aria-hidden="true"></i> News Feed <span class="badge">42</span></a>
-						</li>
-						<li role="presentation">
-							<a href="#" class="black_text"><i class="fa fa-envelope" aria-hidden="true"></i> Messenger <span class="badge">4</span></a>
-                               
-						</li>
-					</ul>
-					<ul class="nav nav-pills nav-stacked">
-						<li style="list-style: none; display: inline">
-							<p class="list-heading">Shortcuts</p>
-						</li>
-						<li role="presentation">
-							<a href="#" class="black_text"> <i class="fa fa-file-text-o" aria-hidden="true"></i> Pages <span class="badge">55</span></a>
-						</li>
-						<li role="presentation">
-							<a href="#" class="black_text"><i class="fa fa-bookmark" aria-hidden="true"></i> Saved Links <span class="badge">49</span></a>
-						</li>
-						<li role="presentation">
-							<a href="#" class="black_text"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Pokes <span class="badge">10</span></a>
-						</li>
-					</ul>
-					<ul class="nav nav-pills nav-stacked">
-						<li style="list-style: none; display: inline">
-							<p class="list-heading">Explore</p>
-						</li>
-						<li role="presentation">
-							<a href="#" class="black_text"><i class="fa fa-list" aria-hidden="true"></i> Friends list </a>
-						</li>
-						<li role="presentation">
-							<a href="#" class="black_text"><i class="fa fa-users" aria-hidden="true"></i> Group <span class="badge">30</span></a>
-						</li>
-						<li role="presentation">
-							<a href="#" class="black_text"><i class="fa fa-gamepad" aria-hidden="true"></i> Games</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-8 col-md-6">
-				<!--first post -->
-				<div id="main">
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title"><a href="#">Write Status</a></h3>
-						</div>
-						<div class="panel-body">
-							<div>
-								<h3 ><iframe class="embed-responsive-item"  width="560" height="315" src="https://www.youtube.com/embed/RZ27kYhUMXw"></iframe></h3>
-							</div>
-							<div>
-								<span><span aria-hidden="true" class="glyphicon glyphicon-thumbs-up"></span>Like</span> <span><span aria-hidden="true" class="glyphicon glyphicon-comment"></span>Comment</span>
-							</div>
-						</div>
-						<div class="panel-footer">
-							<div class="media">
-								<div class="media-left">
-									<a href="#"><img alt="..." class="media-object custom-dimension" src="http://cdn5.thr.com/sites/default/files/imagecache/scale_crop_768_433/2017/03/hugh_jackman_x-men_2000_-_photofest_-_h_2017.jpg"></a>
-								</div>
-								<div class="media-body">
-									<p class="comment"><span><a href="#">Raghav</a></span> hahhhah thats funny</p>
-									<div>
-										<small><span><a href="#">Like</a></span> <span><a href="#">Comment</a><span> 1 day ago</span></span></small>
-										<div></div>
-									</div>
-								</div>
-							</div>
-							<div class="media">
-								<div class="media-left">
-									<a href="#"><img alt="..." class="media-object custom-dimension" src="https://s-media-cache-ak0.pinimg.com/originals/21/63/14/216314c5d237b78fddbe095d9f8ab1e9.jpg"></a>
-								</div>
-								<div class="media-body">
-									<p class="comment"><span><a href="#">Naman</a></span> lol </p>
-									<div>
-										<small><span><a href="#">Like</a></span> <span><a href="#">Comment</a><span> 2 days ago</span></span></small>
-										<div>
-											<input placeholder="Write a comment..." style="width: 100%;margin-top: 15px;">
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title"><a href="#">Movie qoutes</a></h3>
-						</div>
-						<div class="panel-body">
-							<blockquote>
-								<p>Madness,as u know, is like gravity. All it takes is a little push</p>
-								<footer>
-									The Joker <cite title="Source Title">(Dark Knight)</cite>
-								</footer>
-							</blockquote>
-							<div>
-								<span><span aria-hidden="true" class="glyphicon glyphicon-thumbs-up"></span>Like</span> <span><span aria-hidden="true" class="glyphicon glyphicon-comment"></span>Comment </span>
-							</div>
-						</div>
-						<div class="panel-footer">
-							<div class="media">
-								<div class="media-left">
-									<a href="#"><img alt="..." class="media-object custom-dimension" src="http://users.usinternet.com/nkelebay/Images/Cat_Melon.jpg"></a>
-								</div>
-								<div class="media-body">
-									<p class="comment"><span><a href="#">Manvir</a></span> Give a man mask and he ll become true his self</p>
-									<div>
-										<small><span><a href="#">Like</a></span> <span><a href="#">Comment</a></span><span> 3 days ago</span></small>
-										<div></div>
-									</div>
-								</div>
-							</div>
-							<div class="media">
-								<div class="media-left">
-									<a href="#"><img alt=".." class="media-object" src="http://via.placeholder.com/32x32"></a>
-								</div>
-								<div class="media-body">
-									<p class="comment"><span><a href="#">Aman</a></span> Always crazy shit </p>
-									<div>
-										<small><span><a href="#">Like</a></span> <span><a href="#">Comment</a><span> 5 days ago</span></span></small>
-										<div>
-											<input placeholder="Write a comment..." style="width: 100%;margin-top: 15px;">
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						
-					</div><!--second post -->
-					<div class="panel panel-default">
-						<div class="panel-heading">
-							<h3 class="panel-title"><a href="#">Cricket troll posted</a></h3>
-						</div>
-						<div class="panel-body">
-							<div class="image-post"><img alt="Responsive image" class="img-responsive" src="http://www.folomojo.com/wp-content/uploads/2015/02/16/104.jpg"></div>
-							<div>
-								<span><span aria-hidden="true" class="glyphicon glyphicon-thumbs-up"></span>Like</span> <span><span aria-hidden="true" class="glyphicon glyphicon-comment"></span>Comment</span>
-							</div>
-						</div>
-						<div class="panel-footer">
-							<div class="panel-footer">
-							<div class="media">
-								<div class="media-left">
-									<a href="#"><img alt="..." class="media-object" src="http://via.placeholder.com/32x32"></a>
-								</div>
-								<div class="media-body">
-									<p class="comment"><span><a href="#">Harman</a></span> No fun we lost it already</p>
-									<div>
-										<small><span><a href="#">Like</a></span> <span><a href="#">Comment</a></span></small>
-										<div></div>
-									</div>
-								</div>
-							</div>
-							<div class="media">
-								<div class="media-left">
-									<a href="#"><img alt="..." class="media-object" src="http://via.placeholder.com/32x32"></a>
-								</div>
-								<div class="media-body">
-									<p class="comment"><span><a href="#">Deep</a></span> hahahhahahah!!</p>
-									<div>
-										<small><span><a href="#">Like</a></span> <span><a href="#">Comment</a></span></small>
-										<div>
-											<input placeholder="Write a comment..." style="width: 100%;margin-top: 15px;">
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						</div>
-					</div>
-				</div>
-			</div><!--third post -->
-			<div class="hidden-xs hidden-sm col-md-3">
-				<div id="sidebar">
-					<div>
-						<div>
-
-						  <!-- Nav tabs -->
-						  <ul class="nav nav-tabs" role="tablist">
-						    <li role="presentation" ><a href="#home" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-line-chart" aria-hidden="true"></i></a></li>
-						    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-futbol-o" aria-hidden="true"></i></a></li>
-						    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab"><i class="fa fa-podcast" aria-hidden="true"></i></a></li>
-						    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab"><i class="fa fa-film" aria-hidden="true"></i></a></li>
-						    
-						  </ul>
-
-						  <!-- Tab panes -->
-						  <div class="tab-content">
-						    <div role="tabpanel" class="tab-pane active" id="home"><div class="list-group">
-  <a href="#" class="list-group-item active">
-    <h4 class="list-group-item-heading"></h4>
-    <p class="list-group-item-text">London Blasts</p>
-  </a>Four explosions have been heard near London Bridge, reports say.
-Witnesses reported hearing two explosions near London bridge and one near Borough Market.
-Police are yet to confirm whether they are controlled explosions.
+    <div class="wrapper">
+        <section class="welcome-screen hidden">
+            <h1> Welcome to Songify </h1>
+            <h3> Enter name to access your account </h3>
+            <div class="input-wrapper">
+                <input type="text" placeholder="Name" id="name-input">
+                <button> Go </button>
+            </div>
+        </section>
+        <div class="main">
+            <header>
+                <div class="right floated user-name"> </div>
+            </header>
+            <section class="content">
+                <audio src="song1.mp3"></audio>
 
 
-</div>
-</div>
-						    <div role="tabpanel" class="tab-pane" id="profile"><div class="list-group">
-  <a href="#" class="list-group-item active">
-    <h4 class="list-group-item-heading"></h4>
-    <p class="list-group-item-text">Ireland, Afghanistan awarded Test status</p>
-  </a>The International Cricket Council (ICC) welcomed two new entrants to the Test arena after the Full Council members unanimously granted Ireland and Afghanistan Full Member status in the board meeting in London on Thursday (June 22).
+               <table id="songs">
+    <thead class="list-headers">
+            <tr><td> Title </td>
+            <td> Artist </td>
+            <td> Album </td>
+            <td> Duration </td>
+        </tr></thead>
+        <!-- <div class="song-list"> -->
+            <tbody><tr class="song" id="song1">
+                <td class="song-name"></td>
+                <td class="song-artist"></td>
+                <td class="song-album"></td>
+                <td class="song-length"></td>
+            </tr>
+            <tr class="song" id="song2">
+                <td class="song-name"></td>
+                <td class="song-artist"></td>
+                <td class="song-album"></td>
+                <td class="song-length"></td>
+            </tr>
+            <tr class="song" id="song3">
+                <td class="song-name"></td>
+                <td class="song-artist"></td>
+                <td class="song-album"></td>
+                <td class="song-length"></td>
+            </tr>
+            <tr class="song" id="song4">
+                <td class="song-name"></td>
+                <td class="song-artist"></td>
+                <td class="song-album"></td>
+                <td class="song-length"></td>
+            </tr>
+        <!-- </div> -->
+    </tbody></table>
 
-Ireland have been knocking on the doors of the ICC for quite some time. Having played their first 50-over World Cup in 2007 and immediately making an impact by beating Pakistan, Ireland have since participated in every ICC event, causing a few upsets along the way.
-</div></div>
-						    <div role="tabpanel" class="tab-pane" id="messages"><div class="list-group">
-  <a href="#" class="list-group-item active">
-    <h4 class="list-group-item-heading"></h4>
-    <p class="list-group-item-text">Trumps gives New Order</p>
-  </a>
-</div>Trump proposes a law that's existed for 20 years-Trump received a standing ovation and pledged his administration would put the legislation into effect “very shortly.” 
+        <div class="current-song-wrapper">
+        <img class="current-song-image">
+        <div>
+        <p class="current-song-name"></p>
+        <p class="current-song-album"></p>
+        </div>
+        </div>
 
-“I believe the time has come for new immigration rules which say that those seeking admission into our country must be able to support themselves financially and should not use welfare for a period of at least five years,” Trump told the crowd in Cedar Rapids, Iowa</div>
-						  
-						    <div role="tabpanel" class="tab-pane" id="settings"><div class="list-group">
-  <a href="#" class="list-group-item active">
-    <h4 class="list-group-item-heading"></h4>
-    <p class="Tubelight Movie Review">Tubelight Review</p>
+            </section>
+
+
+
+        <section class="drums hidden">
+
+        <div class="effect a">Cabinet</div>
+        <div class="effect b">Chorus</div>
+        <div class="effect c">Moog ilte</div>
+        <div class="effect d">Gain</div>
+
+        <div class="keys">
+          <div data-key="65" class="key">
+           <kbd>A</kbd>
+           <span id="clap" onclick="clap()" class="sound">clap</span>
+        </div>
+           <div data-key="83" class="key">
+           <kbd>S</kbd>
+           <span id="hihat" onclick="hihat()" class="sound">hihat</span>
+        </div>
+          <div data-key="68" class="key">
+           <kbd>D</kbd>
+           <span id="kick" onclick="kick()" class="sound">kick</span>
+        </div>
+          <div data-key="70" class="key">
+           <kbd>F</kbd>
+           <span id="openhat" onclick="openhat()" class="sound">openhat</span>
+        </div>
+        <div data-key="71" class="key">
+           <kbd>G</kbd>
+           <span id="boom" onclick="boom()" class="sound">boom</span>
+        </div>
+        <div data-key="72" class="key">
+           <kbd>H</kbd>
+           <span id="ride" onclick="ride()" class="sound">ride</span>
+        </div>
+        <div data-key="74" class="key">
+           <kbd>J</kbd>
+           <span id="snare" onclick="snare()" class="sound">snare</span>
+        </div>
+        <div data-key="75" class="key">
+           <kbd>K</kbd>
+           <span id="tom" onclick="tom()" class="sound">tom</span>
+        </div>
+        <div data-key="76" class="key">
+           <kbd>L</kbd>
+           <span id="tink" onclick="hello()" class="sound">tink</span>
+        </div>
+        </div>
 
 
 
 
-  </a>Salman Khan Is The Worst Thing About Tubelight.Playing a developmentally disabled young man, Salman Khan gives one of the worst performances of his career
-</div></div>
-						  </div>
 
-						</div>
-				</div>
-			</div>
-		</div>
-		<footer>
-			<div class="nav nav-pills pull-right" style="margin-left: 2em">
-				<ul class="nav nav-pills">
-					<li role="presentation">
-						<a href="#">About Us</a>
-					</li>
-					<li role="presentation">
-						<a href="#">Home</a>
-					</li>
-					<li role=" presentation">
-						<a href="#">Privacy</a>
-					</li>
-					<li role="presentation">
-						<a href="#">Advertising</a>
-					</li>
-					<li role="presentation">
-						<a href="#">Cookies</a>
-					</li>
-					<li role="presentation">
-						<a href="#">Ad Choices</a>
-					</li>
-				</ul>
-			</div>
-		</footer>
-	</div><!--Container ends here-->
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
-	</script> <!-- Include all compiled plugins (below), or include individual files as needed -->
-	 
-	<script src="js/bootstrap.min.js">
-	</script>
+
+
+
+        </section>
+
+
+
+
+
+
+            <footer>
+                <div class="controls">
+                    <div class="player-buttons">
+      <i class="fa fa-random clickable disabled" aria-hidden="true"></i>
+      <i class="fa fa-step-backward clickable" aria-hidden="true"></i>
+      <i class="fa fa-play clickable play-icon" aria-hidden="true"></i>
+      <i class="fa fa-step-forward clickable" aria-hidden="true"></i>
+      <i class="fa fa-repeat disabled clickable" aria-hidden="true"></i>
+      <img src ="img/drum.png" class="hello">
+    </div>
+                    <div class="progress-wrapper">
+                        <span class="time-elapsed"> </span>
+                        <div class="player-progress">
+                            <div class="progress-filled"> </div>
+                        </div>
+                        <span class="song-duration"></span>
+                    </div>
+                </div>
+            </footer>
+
+
+
+
+
+
+        </div>
+    </div>
+    <script src="jquery.js"></script>
+
+
+
+
+
+
+    <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js">
+     </script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/tunajs/0.4.4/tuna-min.js" type="text/javascript"></script>
+     <script src="main.js"></script>
+<script type="text/javascript" src="affects.js">
+
+</script>
 </body>
+
 </html>
